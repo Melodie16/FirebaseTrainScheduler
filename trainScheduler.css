@@ -1,0 +1,45 @@
+.title {
+    background-color: rgb(163, 73, 8);
+    color: whitesmoke;
+    text-align: center;
+    width: 60%;
+    height: 175px;
+}
+.div2 {
+    width: 60%;
+    height: 250px;
+    border-style: solid;
+    border-color: blue;
+    margin-top: 10px;
+    font-size: smaller;
+    font-weight: bolder;
+}
+
+.div3 {
+    width: 60%;
+    height: 250px;
+    border-style: solid;
+    border-color: blue;
+    margin-top: 10px;
+    font-size: smaller;
+    font-weight: bolder;
+}
+.div2-title {
+    width: 100%;
+    background-color: lightskyblue;
+    color: whitesmoke;
+    margin: 0;
+    padding: .5px;
+}
+
+.div3-title {
+    width: 100%;
+    background-color: lightskyblue;
+    color: whitesmoke;
+    margin: 0;
+    padding: .5px;
+}
+.submit {
+    background-color: lightskyblue;
+    color: white;
+}
