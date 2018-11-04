@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <title>Train Scheduler</title>
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-    <script src="trainScheduler.js"></script>
+   
     <link rel="stylesheet" type="text/css" href="trainScheduler.css" />
     
 </head>
 <body>
+ 
     <div class= "title">
     <h1>Anytime is Train Time</h1>
     <h3>Choo Choo. Chee Chee.</h3>
@@ -22,26 +22,30 @@
  <div class= "div3">
      <div class= "div3-title"><h3>Add Train</h3></div>
      <form>
-            Train Name<br>
-            <input type="text" id= "train-name-input" type="name"><br>
-            
-            Destination<br>
-            <input type="text" id= "destination-input" type="name"><br>
-           
-            First Train Time(HH:mm- military time)<br>
-            <input type="text" id= "train-time-input" type="time"><br>
-           
-            Frequency(min)<br>
-            <input type="text" id= "train-frequency-input" name="frequency"><br>
-
-            <br>
-            <button class="submit" id= "add-train" type="Submit">Submit</button>
-
-             </form>
+        <div class="form-group">
+          <label for="train-name-input">Train Name</label><br>
+          <input class="form-control" id="train-name-input" type="text">
+        </div>
+        <div class="form-group">
+          <label for="Destination-input">Destination</label><br>
+          <input class="form-control" id="destination-input" type="text">
+        </div>
+        <div class="form-group">
+          <label for="train-time-input">Train Time (HH:mm)-military</label><br>
+          <input class="form-control" id="train-time-input" type="military time">
+        </div>
+        <div class="form-group">
+          <label for="frequency-input">Frequeny</label><br>
+          <input class="form-control" id="frequency-input" type="number">
+        </div>
+        <button class="btn btn-primary" id="add-train-btn" type="submit">Submit</button>
+      </form>
 
    
  </div>
-   
-
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+ <script src="trainScheduler.js"></script>
 </body>
 </html>
